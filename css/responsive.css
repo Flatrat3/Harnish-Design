@@ -1,0 +1,98 @@
+@media screen and (max-width: 576px) {
+  .header-nav {
+    display: none;
+  }
+  .about-content-container,
+  .about-footer-container,
+  .project-list-container,
+  .education-history-container,
+  .portofilo-menu,
+  .images-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .have-any-questions {
+    padding: 0 2rem;
+  }
+
+  .progress-bars {
+    display: flex;
+    flex-direction: column;
+  }
+  .progress-bars-left,
+  .progress-bars-right {
+    width: 100%;
+  }
+  .work-with-overlay h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+  .about-content-container,
+  .education-history-container,
+  .portofilo-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .about-footer-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  .about-footer-column {
+    flex-basis: 50%;
+  }
+
+  .project-list-container-column {
+    flex-basis: calc(50% - 2rem);
+    margin: 1rem;
+    text-align: center;
+  }
+  .progress-bars {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .progress-bars-left,
+  .progress-bars-right {
+    width: 100%;
+  }
+  .images-container-column {
+    flex-basis: calc(50% - 0.5rem);
+    padding: 0 10px;
+  }
+  .work-with-overlay h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .education-history-container,
+  .progress-bars {
+    padding: 0 16px;
+  }
+  .images-container-column {
+    flex-basis: calc(50% - 0.5rem);
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .project-list-container-column {
+    flex-basis: calc(50% - 2rem);
+    margin: 1rem;
+    text-align: center;
+  }
+  .have-any-questions {
+    padding: 0 2rem;
+  }
+}
