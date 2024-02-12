@@ -7,8 +7,7 @@ function isInViewport(element) {
         rect.left >= 0 &&
         rect.bottom <=
         (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <=
-        (window.innerWidth || document.documentElement.clientWidth)
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
 
@@ -24,23 +23,36 @@ function animateElements() {
 window.addEventListener("load", animateElements);
 window.addEventListener("scroll", animateElements);
 
-
-
-
-// Scrolling
+//Scrolling
 
 const header = document.querySelector("header");
-console.log(header);
+
 
 document.addEventListener("scroll", () => {
-    console.log(window.scrollY);
+    if (window.scrollY > 700) header.style.background = "yellow";
+    else header.style.background = "#fff";
+});
 
-    if (window.scrollY > 700) {
-        header.style.background = "yellow"
-    } else {
-        header.style.background = "#fff"
-    }
+//Scrolling
 
 
+// Addin filter gallery
+const allButtons = document.querySelectorAll('.portofilo-menu li');
+const images = document.querySelectorAll('.images-container .images-container-column');
 
-})
+const filterImage = (e) => {
+    const filterValue = e.target.closest('li').dataset.filter;
+
+    images.forEach((image) => {
+        if (image.dataset.name === filterValue || filterValue === 'all') {
+            image.classList.remove('hide');
+        } else {
+            image.classList.add('hide');
+        }
+    });
+};
+
+allButtons.forEach((button) => button.addEventListener('click', filterImage));
+
+
+

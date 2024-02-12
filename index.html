@@ -323,14 +323,14 @@
     <a href="#" class="about-me">Portofilo</a>
     <h2 class="help-title fadeInUp">Some of my most recent projects</h2>
     <ul class="portofilo-menu">
-      <li><a href="#">All</a></li>
-      <li><a href="#">Details</a></li>
-      <li><a href="#">Mockups</a></li>
-      <li><a href="#">Youtube videos</a></li>
-      <li><a href="#">Vimeo videos</a></li>
+      <li data-filter="all"><a>All</a></li>
+      <li data-filter="details"><a>Details</a></li>
+      <li data-filter="mockups"><a>Mockups</a></li>
+      <li data-filter="youtube"><a>Youtube videos</a></li>
+      <li data-filter="vimeo"><a>Vimeo videos</a></li>
     </ul>
     <div class="images-container">
-      <div class="images-container-column">
+      <div class="images-container-column" data-name="details">
         <a href="#">
           <div class="images-overlay">
             <div class="portofilo-icon">
@@ -342,7 +342,7 @@
           <img src="img/project-1.jpg" alt="" />
         </a>
       </div>
-      <div class="images-container-column">
+      <div class="images-container-column" data-name="details">
         <a href="#">
           <div class="images-overlay">
             <div class="portofilo-icon">
@@ -354,7 +354,7 @@
           <img src="img/project-2.jpg" alt="" />
         </a>
       </div>
-      <div class="images-container-column">
+      <div class="images-container-column" data-name="vimeo">
         <a href="#">
           <div class="images-overlay">
             <div class="portofilo-icon">
@@ -366,7 +366,7 @@
           <img src="img/project-3.jpg" alt="" />
         </a>
       </div>
-      <div class="images-container-column">
+      <div class="images-container-column" data-name="mockups">
         <a href="#">
           <div class="images-overlay">
             <div class="portofilo-icon">
@@ -378,7 +378,7 @@
           <img src="img/project-4.jpg" alt="" />
         </a>
       </div>
-      <div class="images-container-column">
+      <div class="images-container-column" data-name="youtube">
         <a href="#">
           <div class="images-overlay">
             <div class="portofilo-icon">
@@ -390,7 +390,7 @@
           <img src="img/project-5.jpg" alt="" />
         </a>
       </div>
-      <div class="images-container-column">
+      <div class="images-container-column" data-name="vimeo">
         <a href="#">
           <div class="images-overlay">
             <div class="portofilo-icon">
@@ -493,6 +493,7 @@
       </div>
     </div>
   </section>
+
 
   <script src="app.js"></script>
 
