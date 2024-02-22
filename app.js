@@ -55,4 +55,41 @@ const filterImage = (e) => {
 allButtons.forEach((button) => button.addEventListener('click', filterImage));
 
 
+//Navigation Click Event Handler
+document.addEventListener('DOMContentLoaded', function () {
+    var navLinks = document.querySelectorAll('.header-nav a');
+
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Remove active__li class from all parent li elements
+            navLinks.forEach(function (navLink) {
+                var parentLi = navLink.closest('li');
+                if (parentLi) {
+                    parentLi.classList.remove('active__li');
+                }
+            });
+
+            var targetId = link.getAttribute('href').substring(1);
+            var targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                // Add active__li class to the parent li of the clicked link
+                var parentLi = link.closest('li');
+                if (parentLi) {
+                    parentLi.classList.add('active__li');
+                }
+
+                // Scroll to the target section
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+
 
