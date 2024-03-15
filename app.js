@@ -108,10 +108,10 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
     },
 
-    
+
     mousewheel: true,
 
-    
+
     keyboard: true,
 
     // Autoplay configuration
@@ -119,4 +119,22 @@ var swiper = new Swiper(".mySwiper", {
         delay: 3000, // 
         disableOnInteraction: false, // Set to false to prevent autoplay stopping when user interacts with slider
     }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var text = document.getElementById("dynamicText").textContent.trim();
+    var element = document.getElementById("dynamicText");
+    element.textContent = "";
+
+    var index = 0;
+    var timer = setInterval(function () {
+        element.textContent += text[index];
+        index++;
+        if (index >= text.length) {
+            index = 0; // Reset the index to start over
+            element.textContent = ""; // Clear the text content to start over
+        }
+    }, 50); 
 });

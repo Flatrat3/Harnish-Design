@@ -992,6 +992,6 @@ li.active__li {
   opacity: 1 !important;
 }
 
-/* .swiper-button-prev.swiper-button-disabled {
+.swiper-button-prev.swiper-button-disabled {
   opacity: 0 !important;
-} */
+}
