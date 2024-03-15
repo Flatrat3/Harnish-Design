@@ -94,19 +94,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 var swiper = new Swiper(".mySwiper", {
-
-
+    // Enable CSS mode
     cssMode: true,
+
+    // Navigation buttons
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+
+    // Pagination
     pagination: {
         el: ".swiper-pagination",
     },
 
+    
     mousewheel: true,
-    keyboard: true,
-});
 
-swiper.setGrabCursor()
+    
+    keyboard: true,
+
+    // Autoplay configuration
+    autoplay: {
+        delay: 3000, // 
+        disableOnInteraction: false, // Set to false to prevent autoplay stopping when user interacts with slider
+    }
+});
