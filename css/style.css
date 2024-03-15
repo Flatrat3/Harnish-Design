@@ -903,3 +903,95 @@ li.active__li {
 .slide-active-button .circle:hover {
   background-color: var(--main-button-color);
 }
+
+.swiper {
+  width: 956px;
+  height: 100%;
+  text-align: center;
+}
+
+.swiper-containe {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide .text-5 {
+  font-size: 26px;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  line-height: 1.8;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.swiper-slide img {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  display: block;
+  margin: 16px auto;
+}
+
+.d-block {
+  display: block;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.text-light {
+  color: #dee3e4;
+}
+
+.nav-button {
+  position: relative !important;
+  margin-top: 40px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #f5df4e !important;
+}
+
+.slide-button {
+  height: 40px !important;
+  width: 40px !important;
+  background-color: #fff;
+  border-radius: 50%;
+  color: gray !important;
+  transform: translateY(30px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.slide-button::after,
+.slide-button::before {
+  font-size: 16px !important;
+}
+
+.swiper:hover .swiper-button-next {
+  opacity: 1;
+}
+
+.swiper-button-prev {
+  cursor: pointer !important;
+}
+
+.swiper:hover .swiper-button-prev {
+  opacity: 1 !important;
+}
+
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0 !important;
+}

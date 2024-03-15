@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -49,8 +50,8 @@
         <li><a href="#client">Client</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    
-    
+
+
       <ul class="social-links flex-row-cdn">
         <li>
           <a href="#"><i class="fab fa-facebook"></i></a>
@@ -470,33 +471,55 @@
       </div>
     </div>
   </section>
-  <section class="clients-comments" id="client">
+  <section class="clients-comments " id="client">
     <div class="clients-comments-container flex-column-centered">
       <a href="#" class="about-me">Client Speak</a>
       <h2 class="help-title fadeInUp">What Some of my Clients Say</h2>
-      <div class="slide-slicker-container flex-column-centered">
-        <p>
-          “I am happy Working with printing and typesetting industry. Quidam
-          lisque persius interesset his et, in quot quidam persequeris essent
-          possim iriure. simply dummy text of the printing and typesetting
-          industry.”
-        </p>
-        <div class="slide-profile-img">
-          <img src="img/client-sm-4.jpg" alt="" />
+
+
+      <div class="swiper mySwiper swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="text-5 text-white">Easy to use, reasonably priced simply dummy text of the printing and
+              typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure. simply dummy
+              text of the printing and typesetting industry.”</p>
+            <img src="img/client-sm-4.jpg" alt="">
+            <strong class="d-block text-3 fw-600 text-white">Jay Shah</strong>
+            <span class="text-light">Founder at Icomatic Pvt Ltd</span>
+
+          </div>
+          <div class="swiper-slide">
+            <p class="text-5 text-white">“Only trying it out since a few days. But up to now excellent. Seems to work
+              flawlessly. priced simply dummy text of the printing and typesetting industry.”</p>
+            <img src="img/client-sm-3.jpg" alt="">
+            <strong class="d-block text-3 fw-600 text-white">Dennis Jacques</strong>
+            <span class="text-light">Noon Inc</span>
+
+          </div>
+          <div class="swiper-slide">
+            <p class="text-5 text-white">Easy to use, reasonably priced simply dummy text of the printing and
+              typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure. simply dummy
+              text of the printing and typesetting industry.”</p>
+            <img src="img/client-sm-2.jpg" alt="">
+            <strong class="d-block text-3 fw-600 text-white">Patrick Cary</strong>
+            <span class="text-light">Freelancer from Usa</span>
+
+          </div>
+
+
+
         </div>
-        <strong>Dennis Jacques</strong>
-        <span>Noon Inc</span>
+        <div class="swiper-button-next slide-button"></div>
+        <div class="swiper-button-prev slide-button"></div>
+        <div class="swiper-pagination nav-button"></div>
       </div>
-      <div class="slide-active-button">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-      </div>
-    </div>
+
+
   </section>
 
 
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="app.js"></script>
 
 </body>

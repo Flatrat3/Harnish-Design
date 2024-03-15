@@ -13,6 +13,10 @@
     text-align: center;
     gap: 1rem;
   }
+
+  .images-container {
+    gap: 0.5rem;
+  }
   .have-any-questions {
     padding: 0 2rem;
   }
@@ -72,6 +76,10 @@
   }
   .work-with-overlay h2 {
     text-align: center;
+  }
+
+  .swiper {
+    width: 400px;
   }
 }
 
