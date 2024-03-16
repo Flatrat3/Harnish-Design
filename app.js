@@ -122,19 +122,28 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     var text = document.getElementById("dynamicText").textContent.trim();
     var element = document.getElementById("dynamicText");
     element.textContent = "";
 
     var index = 0;
+    var direction = 1; 
     var timer = setInterval(function () {
-        element.textContent += text[index];
-        index++;
-        if (index >= text.length) {
-            index = 0; // Reset the index to start over
-            element.textContent = ""; // Clear the text content to start over
+        if (direction === 1) {
+            element.textContent += text[index];
+            index++;
+            if (index >= text.length) {
+                index = text.length - 1;
+                direction = -1;
+            }
+        } else {
+            element.textContent = text.slice(0, index);
+            index--;
+            if (index < 0) {
+                index = 0;
+                direction = 1;
+            }
         }
-    }, 50); 
+    }, 50);
 });
