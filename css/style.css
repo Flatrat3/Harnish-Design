@@ -280,6 +280,14 @@ li.active__li {
   border-bottom: 2px solid var(--main-button-color);
 }
 
+
+.header-container .fa-solid{
+  font-size: 32px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
 .social-links i {
   color: var(--social-link-color);
   transition: all 0.4s;

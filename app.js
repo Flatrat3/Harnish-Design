@@ -147,3 +147,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }, 50);
 });
+
+
+const barIcon = document.querySelector(".fa-solid")
+const headerNav = document.querySelector(".header-nav")
+
+barIcon.addEventListener("click", function(){
+    headerNav.classList.toggle("active")
+
+})

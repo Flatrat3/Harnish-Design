@@ -35,9 +35,31 @@
 }
 
 @media screen and (max-width: 768px) {
+
+
   .header-nav {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: -200px;
+    z-index: 9999;
+    background-color:yellow;
+    width: 200px;
+    height: 100vh;
+    transition: left .4s ease;
   }
+
+
+
+  .active{
+    left: 0;
+  }
+
+.header-container .fa-solid{
+  display: block;
+}
+
   .about-content-container,
   .education-history-container,
   .portofilo-menu {
@@ -80,6 +102,9 @@
 
   .swiper {
     width: 400px;
+  }
+  .social-links{
+    display: none;
   }
 }
 
